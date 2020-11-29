@@ -1,0 +1,7 @@
+#todo-list > li {
+    cursor: pointer;
+}
+
+.strike-through {
+    text-decoration: line-through;
+}
