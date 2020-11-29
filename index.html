@@ -6,22 +6,32 @@
         <link href="./styles.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>To Do</h1>
+        <header>
+            <h1>To Do</h1>
+        </header>        
 
-        <form>
-            <label for="todo-item">To Do Item</label><br />
-            <input type="text" id="todo-item" name="todo-item" /><br />
+        <section>
+            <form id="todo-form">
+                <label for="todo-item">To Do Item</label><br />
+                <input type="text" id="todo-item" name="todo-item" /><br />
+    
+                <input type="submit" value="Submit" />
+            </form>
+        </section>        
 
-            <input type="submit" value="Submit" />
-        </form>
+        <section>
+            <h2>To Do Items</h2>
 
-        <h2>To Do Items</h2>
-
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+            <ul id="todo-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>Created by Aaron Mathews</p>
+        </footer>
 
         <script src="./scripts.js"></script>
     </body>
