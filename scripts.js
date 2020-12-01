@@ -16,7 +16,6 @@ const onFormSubmit = (e) => {
     todoList.appendChild(listItem);
 
     items.push(value);
-    document.getElementById("todo-list-section").hidden = false;
 };
 
 const todoItemOnClick = (e) => {
@@ -31,9 +30,5 @@ const todoItemOnClick = (e) => {
 
 window.onload = () => {
     document.getElementById("todo-form").onsubmit = onFormSubmit;
-    
-    if (items && items.length == 0) {
-        document.getElementById("todo-list-section").hidden = true;
-    }
 };
 
