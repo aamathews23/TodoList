@@ -1,5 +1,5 @@
 #header {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     margin: 20px;
     letter-spacing: 3px;
@@ -38,10 +38,43 @@
     border-bottom: solid 3px black;
 }
 
+/* Todo List Section Styles */
+#todo-list-section {
+    margin: 50px;
+    text-align: center;
+}
+
+#todo-list-section > section > h2 {
+    font-size: 2em;
+}
+
+#todo-list {
+    height: 400px;
+    width: 500px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    margin: 20px 0px;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 12px;
+}
+
 #todo-list > li {
     cursor: pointer;
 }
 
-.strike-through {
-    text-decoration: line-through;
+.todo-list-item {
+    background-color: rgb(207, 77, 68);
+    border: solid 5px rgb(186, 12, 0);
+    color: white;
+    padding: 10px 50px;
+    margin: 15px 12px 15px 0px;
+    font-size: 1.5em;
+}
+
+.clicked-item {
+    background-color: rgb(4, 184, 64);
+    border: solid 5px rgb(1, 112, 38);
+    color: white;
 }

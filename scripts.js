@@ -1,5 +1,5 @@
 const items = [];
-const STRIKE_THROUGH = "strike-through";
+const STRIKE_THROUGH = "clicked-item";
 
 const onFormSubmit = (e) => {
     e.preventDefault();
@@ -11,6 +11,7 @@ const onFormSubmit = (e) => {
     const listItem = document.createElement("li");
     listItem.innerHTML = value;
     listItem.onclick = todoItemOnClick;
+    listItem.classList = "todo-list-item";
 
     const todoList = document.getElementById("todo-list");
     todoList.appendChild(listItem);
