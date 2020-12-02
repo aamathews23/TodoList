@@ -17,6 +17,11 @@ const onFormSubmit = (e) => {
     todoList.appendChild(listItem);
 
     items.push(value);
+
+    const todoListSection = document.getElementById("todo-list-section");
+    const emptyListSection = document.getElementById("empty-list-section");
+
+    todoListSection.removeChild(emptyListSection);
 };
 
 const todoItemOnClick = (e) => {

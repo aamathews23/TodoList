@@ -44,12 +44,12 @@
 }
 
 /* Todo List Section Styles */
-#todo-list-section {
+#todo-list-row {
     margin: 50px 0px;
     text-align: center;
 }
 
-#todo-list-section > section > h2 {
+#todo-list-section > h2 {
     font-size: 2em;
 }
 
