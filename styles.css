@@ -1,3 +1,4 @@
+/* Font Styles */
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:wght@500&display=swap');
 
 h1, h2 {
@@ -8,7 +9,7 @@ input, li, p {
     font-family: 'Roboto', sans-serif !important;
 }
 
-/* All sizes */
+/* Header section styles */
 #header {
     font-size: 3em;
     font-weight: bold;
@@ -16,7 +17,7 @@ input, li, p {
     letter-spacing: 3px;
 }
 
-/* Form Control Styles */
+/* Todo Form Styles */
 #todo-form {
     margin: 0px 20px;
 }
@@ -51,6 +52,11 @@ input, li, p {
 #todo-item:focus {
     outline: none;
     border-bottom: solid 3px black;
+}
+
+#error-message {
+    font-size: 0.8em;
+    color: red;
 }
 
 /* Todo List Section Styles */
@@ -94,12 +100,7 @@ input, li, p {
     margin: 5px 0px;
 }
 
-#error-message {
-    font-size: 0.8em;
-    color: red;
-}
-
-/* Desktop */
+/* Desktop size style */
 @media all and (min-width: 550px) {
     body {
         width: 550px;

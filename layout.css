@@ -1,3 +1,8 @@
+/* 
+    Basic layout CSS
+
+    Used to create the flex containers for responsive design.
+*/
 .row {
     display: flex;
     flex-direction: row;
