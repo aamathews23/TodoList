@@ -94,6 +94,11 @@ input, li, p {
     margin: 5px 0px;
 }
 
+#error-message {
+    font-size: 0.8em;
+    color: red;
+}
+
 /* Desktop */
 @media all and (min-width: 550px) {
     body {
