@@ -1,11 +1,16 @@
+/* All sizes */
 #header {
     font-size: 3em;
     font-weight: bold;
-    margin: 20px;
+    margin: 20px 0px;
     letter-spacing: 3px;
 }
 
 /* Form Control Styles */
+#todo-form {
+    margin: 0px 20px;
+}
+
 #todo-form > * {
     margin: 5px;
 }
@@ -40,24 +45,12 @@
 
 /* Todo List Section Styles */
 #todo-list-section {
-    margin: 50px;
+    margin: 50px 0px;
     text-align: center;
 }
 
 #todo-list-section > section > h2 {
     font-size: 2em;
-}
-
-#todo-list {
-    height: 400px;
-    width: 500px;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    margin: 20px 0px;
-}
-
-#todo-list::-webkit-scrollbar {
-    width: 12px;
 }
 
 #todo-list > li {
@@ -69,7 +62,7 @@
     border: solid 5px rgb(186, 12, 0);
     color: white;
     padding: 10px 50px;
-    margin: 15px 12px 15px 0px;
+    margin: 15px 20px;
     font-size: 1.5em;
 }
 
@@ -77,4 +70,25 @@
     background-color: rgb(4, 184, 64);
     border: solid 5px rgb(1, 112, 38);
     color: white;
+}
+
+#empty-list {
+    width: 100px;
+}
+
+#empty-list-section {
+    margin-top: 20px;
+}
+
+#empty-list-section > * {
+    margin: 5px 0px;
+}
+
+/* Desktop */
+@media all and (min-width: 550px) {
+    body {
+        width: 550px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
