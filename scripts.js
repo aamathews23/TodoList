@@ -51,9 +51,13 @@ const onFormSubmit = (e) => {
         const todoListSection = document.getElementById("todo-list-section");
         const emptyListSection = document.getElementById("empty-list-section");
 
-        todoListSection.removeChild(emptyListSection);
-        todoItem.value = "";
+        // If the emptyListSection exisits remove it
+        if (emptyListSection) {
+            todoListSection.removeChild(emptyListSection);
+        }
+        
         errorMessage.hidden = true;
+        todoItem.value = "";
     } else {
         errorMessage.hidden = false;
     }
